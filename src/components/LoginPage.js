@@ -48,7 +48,7 @@ function LoginPage() {
   return (
     <div class="flex bg-gray-bg1" >
       <div class="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16">
-      <h1 class="text-2xl font-medium text-primary mt-4 mb-12 text-center">Sign In Page</h1>
+      <h1 class="text-2xl font-medium text-primary mt-4 mb-12 text-center">Please Sign In</h1>
         <form
           class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
           onSubmit={handleSubmit}
