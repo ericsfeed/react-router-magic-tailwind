@@ -18,7 +18,7 @@ const ProtectedPage = ({ x }) => {
           );
         }}
       >
-        Sign out
+        Sign Out
       </button>
     </div>
   );
