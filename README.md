@@ -22,6 +22,7 @@ Then find some tailwind CSS and start editing the front end.
 ---
 ### How to demo
 
+https://react-router-magic-tailwind.vercel.app/
 
 ---
 
