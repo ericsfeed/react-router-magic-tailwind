@@ -46,9 +46,9 @@ function LoginPage() {
   };
 
   return (
-    <div class="w-full max-w-xs" >
-      <h2>Sign In Page</h2>
-      <div class="bg-gray-200 ">
+    <div class="flex bg-gray-bg1" >
+      <div class="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16">
+      <h1 class="text-2xl font-medium text-primary mt-4 mb-12 text-center">Sign In Page</h1>
         <form
           class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
           onSubmit={handleSubmit}
@@ -58,7 +58,7 @@ function LoginPage() {
               <legend class="text-center">
                 Where should we send a link so you can sign in?
               </legend>
-              <div class="mb-6">
+              <div class="mb-6 mt-6">
                 <label
                   htmlFor="emailAddress"
                   class="block text-gray-700 text-sm font-bold mb-4"
@@ -66,7 +66,7 @@ function LoginPage() {
                   Email address
                 </label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class="w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4"
                   id="emailAddress"
                   type="email"
                   maxLength="40"
@@ -74,9 +74,9 @@ function LoginPage() {
                   value={emailAddress}
                   autoComplete="email"
                 ></input>
-                <p class="text-red-500 text-xs italic">{errorMessage}</p>
+                <p class="text-red-500 text-xs italic">XYZ {errorMessage}</p>
               </div>{" "}
-              <div class="flex items-center justify-between">
+              <div class="flex justify-center items-center mt-6">
                 <button
                   class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4  rounded focus:outline-none focus:shadow-outline"
                   type="submit"
@@ -84,7 +84,6 @@ function LoginPage() {
                   {loadingState ? "Loading (please wait)..." : "Submit"}
                 </button>
               </div>
-              <p> {errorMessage} </p>
             </fieldset>
           </span>
         </form>
