@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
+import HomePage from "./components/HomePage";
+import AboutPage from "./components/AboutPage";
 import ProtectedPage from "./components/ProtectedPage";
 import PrivateElement from "./components/PrivateElement";
 import Navigation from "./components/Navigation";
@@ -31,17 +33,7 @@ function App() {
   );
 }
 
-export const HomePage = () => {
-  return <div>This is the Home page. </div>;
-};
 
-export const AboutPage = () => {
-  return (
-    <div className="h-screen flex justify-center items-center bg-yellow-300">
-      <h1 className="text-9xl uppercase font-black">About Page</h1>
-    </div>
-  );
-};
 
 export const NotFoundPage = () => {
   return <div>This is a 404 page</div>;

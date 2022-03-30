@@ -1,12 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
+// TODO - this is not a responsive navbar - need to make it responsive. 
+
 const Navigation = () => {
   return (
     <div>
       <nav class="container flex justify-between px-4 py-8 mx-auto bg-white">
         <div>
-          <h3 class="text-2xl font-medium text-blue-500">LOGO</h3>
+          <h3 class="text-xl font-medium text-blue-500">Logo Goes Here</h3>
         </div>
         <div class="hidden space-x-8 lg:flex">
           <NavLink to="/" end>
