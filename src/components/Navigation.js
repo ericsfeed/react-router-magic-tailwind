@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 
 // This is adapted from an example on tailwindui.com
-// It was suitable because in our case we need the page contents to be visible even when the navbar is expanded
+// It is suitable because in our case we need the login page contents to be visible even when the navbar is expanded
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-gray-800">
+      <nav className="text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -25,18 +25,18 @@ const Navigation = () => {
                   <NavLink
                     to="/"
                     end
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-red-900 bg-white-700 hover:bg-purple-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </NavLink>
                   <NavLink
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-red-900 hover:bg-purple-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     to="/about"
                   >
                     About
                   </NavLink>
                   <NavLink
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-red-900 hover:bg-purple-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     to="/protected"
                   >
                     Protected Page
@@ -48,7 +48,7 @@ const Navigation = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-red-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-purple-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -106,20 +106,20 @@ const Navigation = () => {
                 <NavLink
                   to="/"
                   end
-                  className="hover:bg-gray-600 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="hover:bg-purple-300 text-red-900 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </NavLink>
 
                 <NavLink
-                  className="text-gray-300 hover:bg-gray-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-red-900 hover:bg-purple-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   to="/about"
                 >
                   About
                 </NavLink>
 
                 <NavLink
-                  className="text-gray-300 hover:bg-gray-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-red-900 hover:bg-purple-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   to="/protected"
                 >
                   Protected Page
