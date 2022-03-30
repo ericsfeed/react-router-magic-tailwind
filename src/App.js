@@ -8,7 +8,6 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
     <div className="App">
-
       <Navigation />
 
       <div className="main">
@@ -28,7 +27,6 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-
     </div>
   );
 }
@@ -38,7 +36,11 @@ export const HomePage = () => {
 };
 
 export const AboutPage = () => {
-  return <div>This is the About page. </div>;
+  return (
+    <div className="h-screen flex justify-center items-center bg-yellow-300">
+      <h1 className="text-9xl uppercase font-black">About Page</h1>
+    </div>
+  );
 };
 
 export const NotFoundPage = () => {
@@ -46,4 +48,3 @@ export const NotFoundPage = () => {
 };
 
 export default App;
-

@@ -46,24 +46,43 @@ function LoginPage() {
   };
 
   return (
-    <div>
-      <p>This is the Login page. </p>
-      <form onSubmit={handleSubmit}>
+    <div class="w-full max-w-xs">
+      <h2>Sign In Page</h2>
+      <form
+        onSubmit={handleSubmit}
+        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      >
         <span>
           <fieldset>
-            <legend>Where should we send a link so you can sign in?</legend>
-            <label htmlFor="emailAddress">Email address:</label>
-            <input
-              id="emailAddress"
-              type="email"
-              maxLength="40"
-              onChange={handleChange}
-              value={emailAddress}
-              autoComplete="email"
-            ></input>{" "}
-            <button type="submit">
-              {loadingState ? "Loading (please wait)..." : "Submit"}
-            </button>
+            <legend class="text-center">
+              Where should we send a link so you can sign in?
+            </legend>
+            <div class="mb-6">
+              <label
+                htmlFor="emailAddress"
+                class="block text-gray-700 text-sm font-bold mb-4"
+              >
+                Email address
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="emailAddress"
+                type="email"
+                maxLength="40"
+                onChange={handleChange}
+                value={emailAddress}
+                autoComplete="email"
+              ></input>
+              <p class="text-red-500 text-xs italic">{errorMessage}</p>
+            </div>{" "}
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                {loadingState ? "Loading (please wait)..." : "Submit"}
+              </button>
+            </div>
             <p> {errorMessage} </p>
           </fieldset>
         </span>
