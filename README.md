@@ -8,7 +8,8 @@ IMHO the composability of tailwind is a big win.
 
 ### How to convert repo to tailwind
 
-This script works fine: https://tailwindcss.com/docs/guides/create-react-app
+You can follow this script to add tailwind to your create-react-app: https://tailwindcss.com/docs/guides/create-react-app
+
 
 ```
 npm install -D tailwindcss@latest postcss autoprefixer
